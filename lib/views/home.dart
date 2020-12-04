@@ -61,33 +61,39 @@ class _HomeState extends State<Home> {
     );
   }
 }
-
+//news categories
 class CategoryTile extends StatelessWidget {
   final imageUrl, name;
   CategoryTile({this.imageUrl, this.name});
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(right: 16),
-      child: Stack(
-         children: <Widget>[
-           ClipRRect(
-             borderRadius: BorderRadius.circular(6),
-               child: Image.network(imageUrl, width: 120,height: 60,fit:BoxFit.cover,)
-           ),
-           Container(
-             width: 120,
-             height: 60,
-             decoration: BoxDecoration(
+    return GestureDetector(
+      onTap: (){
+
+      },
+      child: Container(
+        margin: EdgeInsets.only(right: 16),
+        child: Stack(
+           children: <Widget>[
+             ClipRRect(
                borderRadius: BorderRadius.circular(6),
-               color: Colors.black26,
+                 child: Image.network(imageUrl, width: 120,height: 60,fit:BoxFit.cover,)
              ),
-             child: Text(name, style: TextStyle(
-               color: Colors.white
-               //fontWeight: FontWeight.bold,
-             ),),
-           )
-         ],
+             Container(
+               alignment: Alignment.center,
+               width: 120,
+               height: 60,
+               decoration: BoxDecoration(
+                 borderRadius: BorderRadius.circular(6),
+                 color: Colors.black26,
+               ),
+               child: Text(name, style: TextStyle(
+                 color: Colors.white,
+                 fontWeight: FontWeight.w500,
+               ),),
+             )
+           ],
+        ),
       ),
     );
   }
