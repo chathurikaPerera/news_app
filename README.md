@@ -2,6 +2,9 @@
 
 A new Flutter application.
 
+<img src="images/img1.jpg" width="200" height="300">    <img src="images/img2.jpg" width="200" height="300">   <img src="images/img3.jpg" width="200" height="300">
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
