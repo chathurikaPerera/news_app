@@ -2,7 +2,7 @@
 
 A new Flutter application.
 
-<img src="images/img1.jpg" width="200" height="300">    <img src="images/img2.jpg" width="200" height="300">   <img src="images/img3.jpg" width="200" height="300">
+<img src="images/img1.png" width="200" height="300">    <img src="images/img2.png" width="200" height="300">   <img src="images/img3.png" width="200" height="300">
 
 
 ## Getting Started
