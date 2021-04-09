@@ -6,6 +6,7 @@ import 'package:news_app/helper/news.dart';
 import 'package:news_app/model/article_model.dart';
 import 'package:news_app/model/category_model.dart';
 import 'package:news_app/views/article_view.dart';
+import 'package:news_app/views/category_news.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -41,9 +42,9 @@ class _HomeState extends State<Home> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Flutter"),
+            Text("American"),
             Text("News", style: TextStyle(
-              color: Colors.yellowAccent,
+              color: Colors.lightBlue,
             ),)
           ],
         ),
@@ -107,6 +108,11 @@ class CategoryTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
+        Navigator.push(context, MaterialPageRoute(
+          builder: (context) => CategoryNews(
+             category: name.toLowerCase(),
+          )
+        ));
 
       },
       child: Container(
